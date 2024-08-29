@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Form</title>
+  </head>
+  <body>
+    <form action="https://httpbin.org/post" method="post">
+      <fieldset>
+        <legend><h2>Account Opening Form</h2></legend>
+        <span>Full Name*</span>
+        <select>
+          <option>Mr.</option>
+          <option>Mrs.</option>
+        </select>
+        <input type="text" placeholder="First Name" name="first name" />
+        <input
+          type="text"
+          placeholder="Last Name"
+          name="last name"
+        /><br /><br />
+        <span name="Account type">Account Type*</span
+        ><select>
+          <option name="please select">Please select</option>
+          <option name="savings Account">Savings Account</option>
+          <option name="current Account">Current Account</option></select
+        ><br /><br />
+        <span name="ID Card Number">ID Card Number* :</span
+        ><input type="number" placeholder="ex:1234" name="usd" /><br /><br />
+        <span>Mother's Name* :</span
+        ><input type="text" name="mothers name" /><br />
+        <br />
+        <span>Monthly Salary*:</span
+        ><input
+          type="text"
+          placeholder="USD"
+          name="Monthly Salary"
+        /><br /><br />
+        <span>Gender* :</span
+        ><input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="Female" /> Female<input
+          type="radio"
+          name="gender"
+          value="others"
+        />
+        Others <br /><br />
+        <span>Date of Birth* :</span
+        ><input type="date" name="date of birth" /><br /><br />
+        <span>Maratial status* :</span
+        ><input type="radio" name="marriage" value="single" />single
+        <input type="radio" name="marriage" value="Married" />Married<input
+          type="radio"
+          name="marriage"
+          value="Divorced"
+        />Divorced<input type="radio" name="marriage" value="widow" />Widow(er)
+        <br /><br />
+        <span>Tele Number* :</span>
+        <input type="number" placeholder="code" name="code" />
+        <input type="number" placeholder="phone number" name="number" /> <br />
+        <p>Address* :</p>
+        <textarea rows="6" cols="66" name="address"></textarea> <br />
+        <br />
+        Email :
+        <input
+          name="email"
+          type="email"
+          title="please enetr valid email"
+          pattern="[a-zA-Z0-9@.]{3,}"
+          required
+        /><br /><br />
+        Password :
+        <input
+          type="password"
+          name="password"
+          pattern="[a-zA-Z0-9]{3,8}"
+          required
+        />
+        <br /><br />
+        <input type="submit" />
+        <p>hahaha&#128512;</p>
+      </fieldset>
+    </form>
+  </body>
+</html>
